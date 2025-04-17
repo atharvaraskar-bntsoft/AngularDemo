@@ -1,0 +1,12 @@
+
+<ul>
+    <li *ngFor="let i of fruits; let j = index">
+      {{j+1}}- {{i}}
+    </li>
+</ul>
+<p *ngIf="isTrue">Login Successfully  And it visible!!</p>
+<p *ngIf="!isTrue">Login unccessfully!! and it not visible</p> -->
+
+
+<app-child [nameChildVariable]=" userNameParentVariable" [phoneno]="phoneno"></app-child>
+<app-child [mail]="mail"></app-child>
