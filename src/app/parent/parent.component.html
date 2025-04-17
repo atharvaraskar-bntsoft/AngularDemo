@@ -1,12 +1,25 @@
+<p>parent works!</p>
 
 <ul>
-    <li *ngFor="let i of fruits; let j = index">
-      {{j+1}}- {{i}}
+    <li *ngFor="let f of fruits ; let i =index">
+        {{i+1}} == {{f}}
     </li>
 </ul>
-<p *ngIf="isTrue">Login Successfully  And it visible!!</p>
-<p *ngIf="!isTrue">Login unccessfully!! and it not visible</p> -->
 
 
-<app-child [nameChildVariable]=" userNameParentVariable" [phoneno]="phoneno"></app-child>
-<app-child [mail]="mail"></app-child>
+<p *ngIf="isTrue"> this is visible </p>
+<p *ngIf="!isTrue"> this is visible </p>
+
+<!-- <app-child [nameChildVarible]="userNameParentVarible"   [password]="password"  ></app-child>
+<app-child [phone]="phone"></app-child> -->
+
+<app-child [team]="team" (teamname)="getTeamFromChild($event)"></app-child> 
+
+<!-- <app-child (msg)="getMsgFromChild($event)"></app-child>
+<h1>this ={{message}}</h1> -->
+
+<!-- <app-child (teamname)="getTeamFromChild($event)"></app-child> -->
+<h1>this ={{iplTeam}}</h1>
+
+
+

@@ -7,12 +7,23 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 
-  fruits: string[] = ['Apple', 'Banana', 'Sitafal', 'Chiku'];
+  fruits : string[] = ['apple','banana','peru','sitafal']
  
-  isTrue=true;
-  userNameParentVariable :string="Atharva Raskar"
-  mail:string= "atharva18@gamil.com"
-  phoneno:string="93939939202"
+  isTrue= true
 
+  userNameParentVarible:string="raj patil"
+  password="123456"
+  phone="911002090"
+  team="rcb"
+  iplTeam=""
 
+  message:string=""
+
+  getMsgFromChild(msg:string){
+    this.message=msg
+  }
+
+  getTeamFromChild(iplteam:string){
+       this.iplTeam=iplteam
+  }
 }
