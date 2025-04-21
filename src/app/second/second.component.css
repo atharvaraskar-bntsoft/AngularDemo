@@ -2,14 +2,14 @@ p {
   color: red;
 }
 
-.activate {
-  background-color: green;
-  color: black;
-  font-size: 50px;
+.notactive {
+  background-color: red;
+  color: white;
+  font-size: 30px;
 }
 
-.notactive {
-  background: red;
-  color: white;
+.isactive {
+  background-color: green;
+  color: black;
   font-size: 50px;
 }
