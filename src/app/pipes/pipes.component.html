@@ -1,0 +1,55 @@
+
+<div class="container">
+    <h1>Date Pipes Example</h1>
+    <p>short: {{today | date:'short'}}</p>
+    <p>long: {{today | date:'long'}}</p>
+
+    <h1>Currency Pipes Example</h1>
+    <p>India: {{number | currency:'INR'}}</p>
+    <p>America: {{number | currency:'USD'}}</p>
+
+    <h1>Uppercase Lowercase PipE</h1>
+    <p>CapitalCase Word- {{name1 | uppercase}}</p>
+    <p> SmallCase Word- {{name1 | lowercase}}</p>
+
+    <h1>Fractional Pipes Example</h1>
+    <p>: NuMBER IS a= {{number | number:'1.4-10'}}</p>
+
+    <h1>Percentage Pipes Example</h1>
+    <p>: NuMBER IS a= {{number | percent:'1.0-4'}}</p>
+
+    <h1>json Pipes Example</h1>
+    <p> Name is ={{person.name | json}}</p>
+    <p>: Jason is a= {{person | json}}</p>
+
+ 
+
+    <h1>Slice Pipes Example</h1>
+    <p> word is ={{word | slice :0:4}}</p>
+    <p>word is = {{word | slice:7}}</p>
+    <p>word is = {{word | slice :0}}</p>
+    <p>word is = {{word | slice:0:-1}}</p>
+    <p>word is = {{word | slice:-7:-1}}</p>
+
+    <h1>Key ValuePipes Example</h1>
+    <ul>
+        <li *ngFor="let i of person| keyvalue">
+          {{ i.key }}: {{ i.value }}
+        </li>
+      </ul>
+
+      
+      <h1>Slice Pipes Example</h1>
+      <p>Word is: {{ gender | i18nSelect: genderMap }}</p>
+      
+      <button (click)="changeGender('male')">Call him</button>
+      <button (click)="changeGender('female')">Call her</button>
+      <button (click)="changeGender('them')">Call BoTH</button>
+      
+      
+
+
+
+
+    
+</div>

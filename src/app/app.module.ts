@@ -12,6 +12,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { BindingSessionComponent } from './binding-session/binding-session.component';
 import { FormsModule } from '@angular/forms';
+import { PipesComponent } from './pipes/pipes.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     ParentComponent,
     ChildComponent,
-    BindingSessionComponent
+    BindingSessionComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
