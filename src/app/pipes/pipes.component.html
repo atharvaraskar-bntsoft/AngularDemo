@@ -1,5 +1,16 @@
 
 <div class="container">
+
+  <h1>Custom pipe </h1>
+  <p>CapitalCase Word- {{name1 | reverseCustomPipe}}</p>
+
+  <h1>Custom Addition pipe </h1>
+  <p>CapitalCase Word- {{num1 | additionPipe:50}}</p>
+
+
+
+    
+  <h1>Below is Alrdey Provided </h1>
     <h1>Date Pipes Example</h1>
     <p>short: {{today | date:'short'}}</p>
     <p>long: {{today | date:'long'}}</p>
@@ -12,6 +23,13 @@
     <p>CapitalCase Word- {{name1 | uppercase}}</p>
     <p> SmallCase Word- {{name1 | lowercase}}</p>
 
+
+    <h1>Custom pipe</h1>
+    <p>CapitalCase Word- {{name1 | reverseCustomPipe}}</p>
+
+
+
+
     <h1>Fractional Pipes Example</h1>
     <p>: NuMBER IS a= {{number | number:'1.4-10'}}</p>
 
@@ -21,6 +39,8 @@
     <h1>json Pipes Example</h1>
     <p> Name is ={{person.name | json}}</p>
     <p>: Jason is a= {{person | json}}</p>
+
+
 
  
 
@@ -38,14 +58,19 @@
         </li>
       </ul>
 
+
+
       
       <h1>Slice Pipes Example</h1>
       <p>Word is: {{ gender | i18nSelect: genderMap }}</p>
+
+        
       
       <button (click)="changeGender('male')">Call him</button>
       <button (click)="changeGender('female')">Call her</button>
       <button (click)="changeGender('them')">Call BoTH</button>
-      
+
+    
       
 
 

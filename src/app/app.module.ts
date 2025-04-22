@@ -14,6 +14,9 @@ import { BindingSessionComponent } from './binding-session/binding-session.compo
 import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
 import { CommonModule } from '@angular/common';
+import { PipeExamplePipe } from './customepipe/pipe-example.pipe';
+import { ReverseCustomPipePipe } from './customepipe/reverse-custom-pipe.pipe';
+import { AdditionPipePipe } from './customepipe/addition-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,12 @@ import { CommonModule } from '@angular/common';
     ParentComponent,
     ChildComponent,
     BindingSessionComponent,
-    PipesComponent
+    PipesComponent,
+    PipeExamplePipe,
+    ReverseCustomPipePipe,
+    AdditionPipePipe,
+    
+    
   ],
   imports: [
     BrowserModule,

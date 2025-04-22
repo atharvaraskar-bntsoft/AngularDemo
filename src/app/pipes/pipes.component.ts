@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class PipesComponent {
   today :Date=new Date();
   number =1234
+   num1=10
 
   name1:string='atharva'
 
