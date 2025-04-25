@@ -22,7 +22,7 @@ import { AdditionPipePipe } from './customepipe/addition-pipe.pipe';
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent,
+    // SecondComponent,
     DashboardComponent,
     FirstChildComponent,
     HeaderComponent,
